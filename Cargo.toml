@@ -9,7 +9,7 @@ repository = "https://github.com/xudesheng/mdbook-typstpdf"
 documentation = "https://docs.rs/mdbook-typstpdf"
 homepage = "https://github.com/xudesheng/mdbook-typstpdf"
 readme = "README.md"
-keywords = ["mdbook", "typst", "pdf", "documentation", "book", "markdown"]
+keywords = ["mdbook", "typst", "pdf", "documentation", "markdown"]
 categories = ["command-line-utilities", "text-processing", "development-tools::build-utils"]
 
 
