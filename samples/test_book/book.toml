@@ -1,0 +1,59 @@
+[book]
+title = "mdBook test book"
+description = "A demo book to test and validate changes"
+authors = ["YJDoc2"]
+language = "en"
+
+[rust]
+edition = "2018"
+
+[output.html]
+mathjax-support = true
+hash-files = true
+
+[output.html.playground]
+editable = true
+line-numbers = true
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
+
+[output.html.redirect]
+"/format/config.html" = "configuration/index.html"
+
+
+[output.typstpdf]
+template_dir = "../twx-k8s/support/typst-template"
+keep_typst_files = true
+chapter_imports = """
+#set quote(block: true)
+#show raw: block => {
+    box(
+        width: 100%,
+        fill: rgb("#f6f8fa"),
+        radius: 4pt,
+        stroke: (left: 2pt + rgb("#e1e4e8")),
+        inset: (x: 10pt, left: 16pt),
+        block
+    )
+}
+
+#import "@preview/cetz:0.2.0"
+#import "@preview/tablex:0.0.6": *
+
+"""
+
+# [output.typstpdf.templates]
+# best-practice-v1 = "best-practice-v1.typ"
+
+[output.typstpdf.template_parameters]
+doc_author = "Xu Desheng"
+doc_title = "Thingworx Containerization Guide"
+doc_version = "1.0.0"
+doc_date = "2025-02-26"

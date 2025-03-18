@@ -1,0 +1,11 @@
+book
+pdf-output
+test_book
+.env
+.helmsman-tmp
+.helm
+.kubectl
+.kustomize
+.kubectl
+.kustomize
+.DS_Store

@@ -1,0 +1,39 @@
+[book]
+authors = ["Xu Desheng"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Thingworx Containerization Guide"
+
+# [preprocessor]
+
+# [preprocessor.mermaid]
+# command = "mdbook-mermaid"
+
+[output]
+
+[output.html]
+# additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+# [output.pdf]
+
+[output.typstpdf]
+template_dir = "support/typst-template"
+keep_typst_files = true
+max_width = 0.95
+max_height = 0.45
+
+[output.typstpdf.templates]
+demo-template-v1 = "demo-template-v1.typ"
+
+
+[output.typstpdf.template_parameters]
+doc_author = "Xu Desheng"
+doc_title = "A sample Guide"
+doc_version = "1.0.0"
+doc_date = "2025-02-26"
+abstract = "A sample guide on AKS."
+author_email = "xudesheng@gmail.com"
+software_tested = "Famous 9.3.12 - 9.7.0"
+feedback_email = "xudesheng@gmail.com"
+reviewers = "Reviewer1, Reviewer2, Reviewer3, Reviewer4"
