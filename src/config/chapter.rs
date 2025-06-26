@@ -1215,7 +1215,7 @@ fn download_remote_image(image_url: &str, image_dir: &Path) -> anyhow::Result<St
         .as_secs();
     
     // Extract extension from URL or default to png
-    let extension = match image_url.split('.').last() {
+    let extension = match image_url.rsplit('.').next() {
         Some(ext) if ["jpg", "jpeg", "png", "gif", "webp", "svg"].contains(&ext.to_lowercase().as_str()) => ext,
         _ => "png",
     };

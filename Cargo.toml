@@ -1,6 +1,6 @@
 [package]
 name = "mdbook-typstpdf"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Desheng Xu <xudesheng@gmail.com>"]
 description = "An mdBook backend that generates PDF output using Typst"

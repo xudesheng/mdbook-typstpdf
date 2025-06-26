@@ -50,7 +50,7 @@ impl Config {
                     log::debug!("Including chapter: {} with path: {}", chapter.name, chapter_path.display());
                 
                     // Add include directive for the chapter with its original path under "chapter"
-                    typ_content.push(format!("#include \"{}\"", chapter_path.display()));
+                    typ_content.push(format!("#include \"{}\"", chapter_path.to_string_lossy().replace('\\', "/")));
                 }
                 
                 
